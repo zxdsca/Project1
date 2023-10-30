@@ -1,0 +1,1255 @@
+Personal Blog on IBM Cloud Static Web Apps
+BY:
+
+R.Yaminie
+
+
+
+PHASE 5: Project Documentation & Submission
+
+Project Definition:
+
+The project is to create a personal travel blog hosted on IBM Cloud Static Web Apps. The goal is to share travel adventures, tips, and captivating photos to inspire others to explore the world and create unforgettable memories. This involves designing the blog structure, creating engaging content, setting up the IBM Cloud Static Web Apps, and ensuring ease of updating the blog.
+
+Abstract:
+Our Project is a captivating personal travel blog hosted on IBM Cloud Static Web Apps. This blog is an immersive window into the adventures, insights, and captivating moments experienced by an avid explorer. From the pristine beaches of Bali to the bustling streets of Tokyo, every blog post is a narrative that takes readers on a visual journey through picturesque destinations and shares invaluable travel tips.
+The blog's IBM Cloud Static Web Apps hosting ensures seamless updates, making it easy for the author to chronicle their ongoing adventures. With engaging content, stunning photography, and insightful travel guides, Our Project inspires readers to embark on their own journeys and discover the beauty of the world.
+Explore the world through the eyes of a passionate traveler, and let our project be your guide to forging unforgettable memories and igniting your own wanderlust.
+
+
+There are 2 major steps in our Project:
+
+Creation and Designing of the Blog
+Deployment of the blog using IBM cloud services
+ 
+Creation and Designing of the Blog:
+
+As Initial step, We will be creating a blog which focuses on sharing the experience and igniting the wanderlust spirit within people by sharing our experience as a form of blog which can reach wider range of audiences.
+
+In the next step we will be creating our blog using a blogging platform either with wordpress.com or blogger.com.
+
+
+
+As the next step we will be registering our domain name as needed for better access throughout the internet.
+
+After setting up my blog and creating the blog pages as required,we will be uploading or induce our content within the blog.
+
+Then we have created social media profiles for our blog on platforms like Facebook, Twitter, Instagram, and Pinterest. We will share our blog posts and engage with our audience.
+
+Now our blog is designed and ready for deployment.
+
+Designing:
+
+For creating our project we will be using HTML for Creation of website whereas we will be using CSS (i.e Cascading Style Sheet) for external styling of our project.
+
+As initial step, We will  set up our Development Environment by Installing Python.
+ 
+
+Beginning the installation:
+
+$ sudo apt-get install python3.8
+To verify the installation enter the following commands in your Terminal.
+
+Python3.8
+Install Flask:
+ Use pip, Python's package manager, to install Flask by running pip install flask in your command line.
+ Setting Up the Structure (HTML)
+Let us begin by establishing a Travel/Tourism project. Create a new index.html file in a new subdirectory to house the website layout. 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Go Trip</title>
+</head>
+
+<body>
+
+    <body>
+
+        <!--===========Nav Bar=================-->
+        <section class="nav-bar">
+            <div class="logo">Go Trip</div>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">tours</a></li>
+                <li><a href="#">package</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            </div>
+
+        </section>
+        <!--===============Banner================-->
+        <section class="banner">
+            <div class="banner-text-item">
+                <div class="banner-heading">
+                    <h1>Find your Next tour!</h1>
+                </div>
+                <form class="form">
+                    <input type="text" list="mylist" placeholder="Where would you like to go?">
+                    <datalist id="mylist">
+                        <option>London</option>
+                        <option>Canada</option>
+                        <option>Monaco</option>
+                        <option>France</option>
+                        <option>Japan</option>
+                        <option>Switzerland</option>
+                        <option>Seoul</option>
+                    </datalist>
+                    <input type="date" class="date">
+                    <a href="#" class="book">book</a>
+                </form>
+            </div>
+        </section>
+
+        <!--=========Services===============-->
+        <section class="services">
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/tour-guide_onzla9.png">
+                <h2>8000+ Our Local Guides</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293738/reliability_jbpn4g.png">
+                <h2>100% Trusted Tour Agency</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293635/experience_a3fduk.png">
+                <h2>28+ Years of Travel Experience</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/feedback_s8z7d9.png">
+                <h2>98% Our Travelers are Happy</h2>
+            </div>
+        </section>
+        <!--==============Places===================-->
+        <section class="places">
+            <div class="places-text">
+                <small>FEATURED TOURS PACKAGES</small>
+                <h2>Favourite Places</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293736/james-wheeler_xqmq2y.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Vancouver, Canada</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293755/paris_uj8wum.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Paris, France</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293955/monaco_usu7xb.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Monaco, Monaco</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293874/switzerland_tubxcm.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Bern, Switzerland</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/korea_bxrcj5.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Seoul, South Korea</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/night-4336403_1920_demehp.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Tokyo, japan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===========About Us===============-->
+        <section class="about">
+            <div class="about-img">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293719/outdoor_tjjhxk.jpg">
+            </div>
+            <div class="about-text">
+                <small>ABOUT OUR COMPANY</small>
+                <h2>We are Go Trip Ravels Support Company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud</p>
+
+                <label><input type="checkbox" checked>Lorem ipsum dolor sit amet</label>
+                <label><input type="checkbox" checked>consectetur adipisicing elit</label>
+                <label><input type="checkbox" checked>Architecto atque consequuntur</label>
+                <label><input type="checkbox" checked>cupiditate doloremque ducimus</label>
+                <a href="#">ABOUT US</a>
+            </div>
+        </section>
+
+        <!--===========Footer=================-->
+        <div class="footer">
+            <div class="links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Offers & Discounts</li>
+                    <li>Get Coupon</li>
+                    <li>Contact Us</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>New Products</h3>
+                <ul>
+                    <li>Woman Cloth</li>
+                    <li>Fashion Accessories</li>
+                    <li>Man Accessories</li>
+                    <li>Rubber made Toys</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Support</h3>
+                <ul>
+                    <li>Frequently Asked Questions</li>
+                    <li>Report a Payment Issue</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>
+</body>
+
+</html>
+ In our project, we will use the same procedure; we will build a header section where we will add the heading, and we will add the main content inside the main section.
+
+
+Header Section of  travel website:
+First, in the header section of our website, we will add a navbar for our travel website using the <nav> tag, and inside the nav tag, we will create different navbar links for our website navbar using an unordered list.
+Inside our header section, we will add another section called “banner,” within which we will add a heading using the <h1> tag; a text input box using the form tag; a menu list for selecting the countries from the menu list; an input of type “date” to select the date from the calendar; and a book button using the <a> tag.
+
+
+
+
+
+
+Body Section of travel website:
+In the body section, we will develop three sections: one for services, one for places, and one for about us. In this section, we will introduce several structures. Within our services section, we will use the <div> to create a container for our service items, and within our div tag, we will add an image and a sub-heading using the <h2>, as well as three more service items.
+Concerning the places portion, we will create the locations in card format. In our places sections, we will first create some div tags, and within those, we will add an image related to the place using the img> tag, and the text for that place using another div tag. We’ll use the span and h2 tags inside that div to add a rating for the place, and the h2 tag to add the subheading of our place items. We’ll make 5 more image cards with zoom features like this one.
+Restaurant Website Using HTML and CSS
+Now, within our about section, we will use the <section> tag to create another section for about us, and within that, we will use the< img> tag to add a display image about our organisation, and we will use the general html element to give a brief explanation about our website.
+Footer Section: 
+We’ll use the footer tag to create a footer section and the <div> tag to create a div section. Using the &copy tag, we will add the copyright emblem and copyright material, as well as the name of the person who designed the website, using the <p> tag. We will generate links for the footer using the unordered list and the <h3> tag. We will include a heading for the quick link, as well as additional items and support.
+Now that we’ve added structure to our webpage, let’s have a look at it.
+
+
+
+
+
+Travel Website Using HTML 
+
+ Styling the Travel Website (CSS):
+Let’s concentrate on how we can style our website. I’ll highlight some key points to remember when styling.
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------Scroll Bar-----------------------*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fde65e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fde02f;
+}
+
+/*========================Nav Bar=========================*/
+.nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px lightslategray;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  flex: 1;
+  font-size: 40px;
+  padding: 20px;
+  margin-left: 50px;
+  font-family: Satisfy;
+}
+
+ul.menu {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.menu li {
+  flex: 1;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "Barlow Condensed";
+  text-align: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: midnightblue;
+  text-decoration: underline;
+}
+
+/*=============================Banner=============================*/
+.banner {
+  background-image: url("https://res.cloudinary.com/dxssqb6l8/image/upload/v1605294054/young-woman-enjoying-beautiful-scenery-of-lago-di-braies-italy-picjumbo-com_aa0fvw.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*overflow: hidden;*/
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  /*background-size: 100%;*/
+}
+
+.banner-text-item {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-heading {
+  flex: 1;
+}
+
+.banner-heading h1 {
+  font-size: 100px;
+  font-weight: normal;
+  color: #fde02f;
+  font-family: Satisfy;
+}
+
+.banner-text-item .form {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 70%;
+  padding: 1% 2%;
+}
+
+.banner-text-item input,
+.banner-text-item .date,
+.banner-text-item .book {
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: Roboto;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+
+.banner-text-item input {
+  width: 50%;
+  flex: 2;
+}
+
+.banner-text-item .date {
+  width: 20%;
+  flex: 1;
+}
+
+.banner-text-item .book {
+  width: 20%;
+  flex: 1;
+}
+
+.banner-text-item .book {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #fde02f;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Barlow Condensed";
+  width: 20%;
+}
+
+/*===========================Services===========================*/
+.services {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item {
+  flex: 1;
+  padding: 50px 10px;
+  border: lightcyan solid 1px;
+  text-align: center;
+  margin: 180px 50px;
+  transition: all 1s;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item:hover {
+  box-shadow: 3px 3px 20px lightsteelblue;
+}
+
+.service-item h2 {
+  font-family: Barlow Condensed;
+  font-size: 18px;
+  width: 120px;
+  color: #001f38;
+  flex: 1;
+}
+
+.service-item img {
+  width: 60px;
+  height: 60px;
+  flex: 1;
+}
+
+/*=============================Places===============================*/
+.places-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.places-text small {
+  font-family: Roboto;
+  color: #ffc342;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.places-text h2 {
+  font-family: Barlow Condensed;
+  font-size: 55px;
+  color: #191d34;
+  letter-spacing: 1px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 80%;
+  height: auto;
+}
+
+.card img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cards .text {
+  padding: 20px;
+  font-family: Barlow Condensed;
+  line-height: 50px;
+}
+
+.cards .card-box {
+  display: flex;
+  flex-flow: row;
+  background-color: #fde02f;
+  font-size: 18px;
+  font-family: Roboto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards .time {
+  flex: 1;
+}
+
+.cards .location {
+  flex: 2;
+}
+
+.cards .cost {
+  color: #4cafad;
+  font-size: 20px;
+}
+
+/*------------Zoom in Photos--------------*/
+.zoom-img {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.zoom-img .img-card {
+  position: absolute;
+  overflow: hidden;
+}
+
+.img-card img {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.card:hover .zoom-img img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*=========================About Us=========================*/
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 500px;
+  height: 700px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  /*width: 100px;*/
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.about-text small,
+.about-text p,
+.about-text input,
+.about-text a {
+  flex: 1;
+  font-family: Roboto;
+}
+
+.about-text small {
+  color: #ffc342;
+  font-size: 18px;
+}
+
+.about-text h2 {
+  flex: 1;
+  font-family: Barlow Condensed;
+  font-size: 60px;
+  color: #191d34;
+  width: 450px;
+}
+
+.about-text label {
+  padding-bottom: 10px;
+  color: #506172;
+  font-weight: bolder;
+  font-family: Roboto;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  width: 500px;
+  line-height: 30px;
+  color: #506172;
+  font-weight: bolder;
+  padding: 50px 0;
+}
+
+.about-text a {
+  background-color: #fff;
+  border: 2px solid #014b85;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 180px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  color: #014b85;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.about-text a:hover {
+  background-color: #014b85;
+  color: #fff;
+}
+
+/*===============Footer===================*/
+.footer {
+  background-image: url("https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293781/pine-tree_mq2sgp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 670px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 36, 0.8);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer .links {
+  position: relative;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links ul {
+  list-style-type: none;
+}
+
+.links h3 {
+  font-family: Barlow Condensed;
+  font-weight: normal;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.links li {
+  font-family: Roboto;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.links li:hover {
+  color: #ffa801;
+}
+
+/*==========================Responsive=============================*/
+@media all and (max-width: 1172px) {
+  .banner-text-item .form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .banner-text-item .form input,
+  .banner-text-item .form .date,
+  .banner-text-item .form a {
+    flex: 1;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .banner-text-item .form input {
+    width: 60%;
+  }
+
+  .banner-text-item .form .date {
+    width: 30%;
+  }
+
+  .banner-text-item .form .book {
+    width: 10%;
+    font-size: 14px;
+  }
+
+  .banner-heading h1 {
+    font-size: 60px;
+  }
+}
+
+@media all and (max-width: 1414px) {
+  .banner-text-item .form input {
+    width: 40%;
+  }
+
+  .banner-text-item .form .date {
+    width: 30%;
+  }
+
+  .banner-text-item .form .book {
+    width: 20%;
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 942px) {
+  .nav-bar {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: static;
+  }
+
+  .logo {
+    flex: 1;
+    font-size: 30px;
+    margin: 10px auto;
+    font-family: Satisfy;
+    color: #fde02f;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+
+  .nav-bar ul li {
+    flex: 1;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .services {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .services .service-item {
+    flex: 1;
+    margin-bottom: -130px;
+    width: 400px;
+  }
+
+  .places-text {
+    margin-top: 200px;
+  }
+}
+
+@media all and (max-width: 928px) {
+  .banner .form input,
+  a {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 1173px) {
+  .banner .form {
+    background-color: transparent;
+  }
+}
+
+@media all and (max-width: 1194px) {
+  .places .card-box p {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 1086px) {
+  .places .cards .text {
+    line-height: 40px;
+  }
+
+  .cards .text .h2 {
+    font-size: 12px;
+  }
+
+  .cards .img-card img {
+    height: 260px;
+  }
+}
+
+@media all and (max-width: 974px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+
+  .card {
+    width: 300px;
+    height: 500px;
+    margin: auto;
+  }
+
+  .cards .text {
+    padding: 5px;
+    font-family: Barlow Condensed;
+  }
+}
+
+@media all and (max-width: 1334px) {
+  .about-img img {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media all and (max-width: 1116px) {
+  .about {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-text h2 {
+    font-size: 35px;
+  }
+
+  .about-img img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media all and (max-width: 708px) {
+  .footer {
+    width: 100%;
+    height: 670px;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+After applying CSS the output of the blog will be:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Deployment of the blog: 
+
+As we have already seen the designing of our blog in the previous phase, Let us see the deployment of the blog in this phase.
+
+Steps involved:
+
+Create IBM Cloud Object Storage instance
+If you already have an instance of Cloud Object Storage you can skip this step…
+Provision a new instance of IBM Cloud Object Storage
+Create IBM Cloud Object Storage Bucket
+Open the COS instance from the Resource List.
+Create a new COS bucket to host the static site files.
+Choose a Bucket name
+Choose the Resiliency, Location and Storage Class options for the bucket.
+Any choices for these options can be used - it does not affect the static site hosting capability. For more details on what they mean, please see this documentation.
+Upload Static Assets To Bucket
+Upload static file assets to the new bucket.
+Enable Public Access to bucket files
+Click the “Access Policies” menu item from the bucket level menu.
+Click the “Public Access” tab from the bucket access policy page.
+Check the Access Group drop-down has “Public Access” option selected.
+Click the “Create access policy” and then “Enable” on the pop menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Check bucket files are accessible
+Bucket files should now be accessible using the service endpoint URL, bucket id and file names. COS supports providing the bucket name in the URL path or a sub-domain on the service endpoint.
+Open the “Configuration” panel on the bucket page.
+Retrieve the public endpoint shown, e.g. s3.<REGION>.cloud-object-storage.appdomain.cloud
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bucket files (like index.html) should now be accessible by a web browser. COS supports both HTTP and HTTPS traffic. Bucket files are available using the following URLs.
+vhost addressing
+<BUCKET_NANME>.s3.eu-gb.cloud-object-storage.appdomain.cloud/index.html
+url path addressing
+s3.<REGION>.cloud-object-storage.appdomain.cloud/<BUCKET_NANME>/index.html
+Bucket files can now be referenced directly in external web applications. COS buckets are often used to store large application assets like videos or images. For hosting an entire website, it is often necessary to serve content from a custom domain name, rather than the COS bucket hostname.
+Custom domain support
+Cloud Internet Services Page Rules can automatically configure custom domain support for COS buckets.
+CNAME DNS records are created to alias the custom domain to the COS bucket hostname. All traffic to the custom domain will then be forwarded to the COS service.
+When COS serves files from bucket sub-domains, the HTTP Host request header value to determine the bucket name. With CNAME DNS records, this header value will still refer to the custom domain, rather than the bucket sub-domain. This field needs to be dynamically updated with the correct value.
+Create IBM Cloud Internet Services instance
+Provision a new instance of Cloud Internet Services.
+Register Custom Domain name with Cloud Internet Services
+Follow the documentation on how to register a custom domain with Cloud Internet Services.
+This process involves delegating name server control for the domain over to IBM Cloud Internet Services.
+Configure Page Rules and DNS records (automatic)
+Cloud Internet Services can automatically set up Page Rules and DNS records needed to forward custom domain traffic to COS buckets. This automatically exposes the bucket as bucket-name.your-domain.com. If you want to change this default sub-domain name, follow the manual steps in the next section.
+Click the Performance drop-down menu and click the “Page Rules” link.
+Click the “Create rule” button from the table.
+Select the Rule Behaviour Setting as “Resolve Override with COS”
+Select the correct COS instance and bucket.
+Click the “Create” button.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Once DNS records have propagated, bucket files should be accessible using the custom domain: http(s)://<CUSTOM_DOMAIN>/index.html.
+Configure Page Rules and DNS records (manual)
+These steps only need following if you haven’t done the section above….
+Create the Page Rule to modify the HTTP host header.
+Click the Performance drop-down menu and select the “Page Rules” link.
+Click the “Create rule” button from the table.
+Set the URL match field to be <SUB_DOMAIN>.<CUSTOM_DOMAIN>/*
+Select the Rule Behaviour Setting as “Host Header Override” as the custom bucket sub-domain:<BUCKET_NANME>.<REGION>.eu-gb.cloud-object-storage.appdomain.cloud
+Create the DNS CNAME record to forward traffic to COS.
+Click the Reliability drop-down menu and click the “DNS” menu entry.
+Add a new DNS record with the following values.
+Type: CNAME
+Name: <custom subdomain host>
+TTL: Automatic
+Alias Domain Name: <COS bucket sub-domain>
+Name is the sub-domain on the custom domain (e.g. www) through which the COS bucket will be accessible. Alias Domain Name is the COS bucket sub-domain from above, e.g. <BUCKET_NANME>.<REGION>.eu-gb.cloud-object-storage.appdomain.cloud
+Once the record is added, set the Proxy field to true. This is necessary for the page rules to work.
+Once DNS records have propagated, bucket files should be accessible using the custom domain.
+Configurable Index and Error pages
+COS will now serve static assets from a custom sub-domain, where file names are explicitly included in the URL, e.g. http(s)://<CUSTOM_DOMAIN>/index.html. This works fine for static websites with two exceptions, the default document for the web site and the error page.
+When a user visits the COS bucket sub-domain without an explicit file path (http(s)://<CUSTOM_DOMAIN>), the COS service will return the bucket file list, rather than the site index page. Additionally, if a user requests a missing file, COS returns an XML error message rather than a custom error page.
+Both issues can be resolved using Edge Functions, a new feature in Cloud Internet Services.
+Edge Functions
+Edge functions are JavaScript source files deployed to Cloudflare’s Edge locations. They can dynamically modify HTTP traffic passing through Cloudflare’s network (for domains you control). Custom edge functions are triggered on configurable URL routes. Functions are passed the incoming HTTP request and control the HTTP response returned.
+Add Edge Function to provide Index & Error Documents
+Using a custom edge function, HTTP traffic to the custom sub-domain can be modified to support Index and Error documents. Incoming HTTP requests without an explicit file name can be changed to use the index page location. HTTP 404 responses returned from COS can be replaced with a custom error page.
+Open the “Edge Functions” page from the Cloud Internet Services instance homepage.
+Click the “Create” icon on the “Actions” tab.
+Enter “route-index-and-errors” in the action name field.
+Paste the following source code into the action body section.
+The INDEX_DOCUMENT and ERROR_DOCUMENT values control the index and error pages used to redirect requests. Replace these values with the correct page locations for the static site being hosted.
+const INDEX_DOCUMENT = 'index.html'
+const ERROR_DOCUMENT = '404.html'
+
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  const url = new URL(request.url)
+
+  // if request is a directory path, append the index document.
+  if (url.pathname.endsWith('/')) {
+    url.pathname = `${url.pathname}${INDEX_DOCUMENT}`
+    request = new Request(url, request)
+  }
+
+  let response = await fetch(request)
+
+  // if bucket file is missing, return error page.
+  if (response.status === 404) {    
+    url.pathname = ERROR_DOCUMENT
+    request = new Request(url, request)
+    response = await fetch(request)
+
+    response = new Response(response.body, {
+      status: 404,
+      statusText: 'Not Found',
+      headers: response.headers
+    })      
+  } 
+
+  return response
+}
+
+
+Click the “Save” button.
+Set up Triggers for Edge Function
+Select the “Triggers” panel from the Edge Functions page.
+Click the “Add trigger” icon.
+Set the Trigger URL to http://<SUB_DOMAIN>.<CUSTOM_DOMAIN>/*.
+Select the “route-index-and-errors” action from the drop-down menu.
+Click the “Save” button.
+Test Index and Error Pages
+Having set up the trigger and edge function, HTTP requests to the root path on the custom sub-domain will return the index page. Accessing invalid bucket files will also return the error page, rather than the COS error response.
+Confirm that http://<SUB_DOMAIN>.<CUSTOM_DOMAIN>/ returns the same page as http://<SUB_DOMAIN>.<CUSTOM_DOMAIN>/index.html
+Confirm that http://<SUB_DOMAIN>.<CUSTOM_DOMAIN>/missing-page.html returns the error page. This should be different to the XML error response returned by visiting <BUCKET_NANME>.s3.<REGION>.cloud-object-storage.appdomain.cloud/missing-page.html.
+If this all works - the site is working! IBM Cloud is now hosting a static website using Cloud Object Storage and Cloud Internet Services with Page Rules and Edge Functions. 🎉🎉🎉
+Summary
+Static web sites can be hosted on IBM Cloud using Cloud Object Storage and Cloud Internet Services.
+Cloud Object stores page files needed to render the static website. Anonymous bucket file access means files are accessible as public HTTP endpoints, without having to run infrastructure to serve the assets.
+Cloud Internet Services forwards HTTP traffic from a custom domain to the bucket hostname. DNS CNAME records are used to resolve the sub-domain as the custom bucket hostname. Page Rules override HTTP request headers to make this work. Edge Functions are used to implement configurable Index and Error documents, by dynamically modifying in-flight requests with custom JavaScript.
+Hosting static web sites using this method can be much cheaper (and easier) than traditional infrastructure. Developers only get charged for actual site usage, based on bandwidth and HTTP requests.
+
+
+Thus our project has been successfully build deployed using IBM cloud.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
